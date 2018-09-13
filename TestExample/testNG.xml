@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "TestSuite">
+    <test name = "AutoQA">
+        <groups>
+            <define name="all">
+                <include name="integrationTests"/>
+                <include name="systemTests"/>
+            </define>
+            <define name="integrationTests">
+                <include name="smokeIntegration"/>
+                <include name="regressionIntegration"/>
+            </define>
+            <run>
+                <include name="integrationTests"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="api.tests.OrderCreation"/>
+        </classes>
+    </test>
+</suite>
