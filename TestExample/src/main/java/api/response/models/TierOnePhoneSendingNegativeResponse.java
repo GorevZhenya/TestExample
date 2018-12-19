@@ -1,9 +1,17 @@
 package api.response.models;
 
-public class OrderCreationNegativeResponse implements ResponseModel {
+public class TierOnePhoneSendingNegativeResponse {
 
     private Boolean result;
     private String error;
+
+    public Boolean getResult() {
+        return result;
+    }
+
+    public void setResult(Boolean result) {
+        this.result = result;
+    }
 
     public String getError() {
         return error;
@@ -13,11 +21,5 @@ public class OrderCreationNegativeResponse implements ResponseModel {
         this.error = error;
     }
 
-    public Boolean getResult() {
-        return result;
-    }
 
-    public void setResult(Boolean result) {
-        this.result = result;
-    }
 }

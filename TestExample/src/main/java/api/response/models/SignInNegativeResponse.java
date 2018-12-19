@@ -1,6 +1,6 @@
 package api.response.models;
 
-public class OrderCreationNegativeResponse implements ResponseModel {
+public class SignInNegativeResponse implements ResponseModel {
 
     private Boolean result;
     private String error;

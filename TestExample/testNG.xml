@@ -10,12 +10,17 @@
                 <include name="smokeIntegration"/>
                 <include name="regressionIntegration"/>
             </define>
+            <define name="systemTests">
+                <include name="smokeSystem"/>
+                <include name="regressionSystem"/>
+            </define>
             <run>
                 <include name="integrationTests"/>
             </run>
         </groups>
         <classes>
-            <class name="api.tests.OrderCreation"/>
+            <class name="ApiTests.CreateOrder"/>
+            <class name = "ApiTests.SignIn"/>
         </classes>
     </test>
 </suite>

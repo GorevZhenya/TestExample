@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>TestExample</groupId>
-    <artifactId>TestExample</artifactId>
+    <groupId>TestAutomationFramework</groupId>
+    <artifactId>TestAutomationFramework</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
@@ -49,7 +49,13 @@
             <artifactId>odftoolkit</artifactId>
             <version>0.6.2-incubating</version>
         </dependency>
-    </dependencies>
+        <dependency>
+            <groupId>org.easytesting</groupId>
+            <artifactId>fest-swing</artifactId>
+            <version>1.2.1</version>
+        </dependency>
 
+
+    </dependencies>
 
 </project>
